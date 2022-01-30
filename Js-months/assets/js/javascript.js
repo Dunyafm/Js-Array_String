@@ -1,30 +1,15 @@
-// var month = new Array();
+let months =["January","February","March","April","May"];
 
-// month['01'] = 'January' ;
-// month['02'] = 'February';
-// month['03'] = 'March' ;
+function monthscount(array) {
+    let arr =[];
+    for (let i = 0; i< array.length; i++) {
+      let count = i + 1 ;
+      let date = array[i] +"-"+count;
+      arr.push(date)
+       
+    }
+return arr;
 
-// var months = new Array(['01','Jan'],['02','Feb'],['03','Mar']);
 
-// let array =[01,02,03,0,05,06,07,08,09,10,11,12];
-// array.splice(array);
-// function getNumericMonth(months) {
-//     return (String(['January',
-//       'February',
-//       'March',
-//       'April',
-//       'May',
-//       'June',
-//       'July',
-//       'August',
-//       'September',
-//       'October',
-//       'November',
-//       'December'].indexOf(months) + array).padStart(2, '0'))
-//   }
-  
-//  console.log(getNumericMonth('February','March','April'));
-var month = new Array();
-var months = new Array(['Jan-01'],['Feb-02'],['Mar-03']);
-
-console.log(months);
+}
+console.log(monthscount(months));
